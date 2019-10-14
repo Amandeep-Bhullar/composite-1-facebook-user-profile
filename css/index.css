@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+:root{
+    --light: #ffffff;
+    --dark: #000000;
+    --loveclr: #F42213;
+    --semilight: #889CBD;
+    --girlclr: #FF81D6;
+    --babyclr: #FFE3EB;
+    --royal: #3C48FF;
+    --queenclr:#60091d;
+    --kingclr:#11322c;
+    --princess:#180105;
+    --links: #3FCCFF;
+    --font-heading: 'Roboto', helvetica, arial, sans-serif;
+    --font-content: 'Roboto', helvetica, arial, sans-serif; 
+    --spacing: 1em;
+}
+
+body{
+background-color: var(--light);
+position: relative;
+background-repeat: no-repeat;
+background-size: cover;
+color: var(--dark);
+max-width: 100%;
+margin: 0;
+padding: 0;
+text-align: justify;
+}
+
+body li{
+    list-style: none;
+    justify-self: stretch;
+}
+
+.topbar{
+    background-color: var(--dark);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.topbar li{
+    padding-left: 0.5em;
+    padding-right: 1em;
+    list-style: none !important;
+    width: 100%;
+}
+.topbar li a{
+    padding-top: 1.5em;
+ }
+.fb-logo img{
+max-width: 3em;
+padding-left: 1em;
+padding-top: 0em;
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+}
+.srch-bar{
+border-radius: 0.2em;
+color: var(--loveclr);
+padding-left: 1em;
+}
+.srch-bar input{
+border: var(--loveclr) solid;
+border-radius: 0.3em;
+padding-top: 1em;
+margin-top: 1em;
+text-align: center;
+width: 30em;
+height: 3em;
+}
+.button{
+    background-color: var(--dark);
+    color: var(--light);
+    display: inline-block;  
+    border: 0em solid #555555;
+    border-radius: 0.5em;
+    text-decoration: none;
+    padding:0.4em;
+}
+.button:hover{
+background-color:var(--light);
+color: var(--dark);
+}
+/* how to maximize the icon size
+.srch-icon{
+    size: 6em;
+} */
+.cover-photo{
+    background-image: url('../img/cover-pic4.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-right: 1em;
+    width: 100%;
+    min-height: 10em;
+    margin:0;
+    text-align: right;
+}
+
+.profile{
+text-align: right;
+
+}
+.profile img{
+    width: 12em;
+    min-height: 8em;
+    border-radius: 8em; 
+    padding: 2em;
+    }
+.add-pro{
+    padding-right: 1em;
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+.crt-prfl-pic{
+    display: inline-block;
+    display: grid;
+}
+.crt-prfl-pic img{
+   max-width: 10em;
+    min-height: 10em;
+    border: var(--dark)solid;
+    border-radius: 5em;
+    margin-left: 2em;
+}
+
+.crt-post{
+    background-color: var(--semilight);
+    display: grid;
+    margin: 0;
+}
+.cntcts{
+background-color: var(--semilight);
+}
+.cntcts img{
+    max-width: 10em;
+    min-height: 6em;
+    border: var(--dark)solid;
+    border-radius: 8em; 
+    padding: 2em;
+}
+/* .grid-cvr-pic{
+    margin: 0!important;
+} */
+.add-pro{
+    margin: 0;
+}
+.sub-menu{
+    margin: 0;
+    display: grid;
+    text-align: top;
+    background-color: var(--dark);
+
+}
+.taxt{ 
+    width: 40em;
+    height: 8em;
+    border: var(--dark) solid;
+    border-radius: 0.5em;
+    margin-top: 8em;
+    margin-left: 3em;
+    font-weight: bold;
+    padding-left: 2em;
+}
+.tagg{
+    display: grid;
+}
+/* .lif-evnt{
+    padding-left: 20em;} */
+@media screen and (min-width:31.25em){
+    body{
+        background-color: bisque;
+    }
+    .topbar{
+        display: grid;
+        grid-template-columns: auto 1fr auto auto auto auto auto auto auto auto auto;
+        text-align: center;
+
+    }
+    .sub-menu{
+        grid-template-columns: auto auto 1fr;
+        text-align: left;
+    }
+      .crt{
+        grid-area: create;
+      }
+      .vice{
+        grid-area: voice;
+      }
+      .phto{
+        grid-area: photo;
+      }
+      .liv{
+        grid-area: live;
+      }
+      .lif {
+        grid-area: life;
+      }
+      .lif-evnt{
+        grid-area: evnt;
+      }
+      .mrid{
+        grid-area: married;
+      }
+    .crt-post{
+       grid-template-columns:  8% [col-start] 8% [col-start] 8% [col-start] 8% [col-start] 8% [col-start] auto [col-start] 8%[col-star] 8% [col-start];
+       grid-template-areas: 
+    "create voice photo live life . evnt married";
+    /* "main main . sidebar" */
+ 
+       text-align: center;
+       padding-left: 12em;
+    }
+    .crt-prfl-pic{
+        grid-template-columns:  auto 1fr auto;
+    }
+    .tagg{
+        grid-template-columns: auto auto 1fr;
+        text-align: left;
+        padding-left: 18em;
+    }
+    /* .crt {
+        grid-column-start: col-start 2;
+      }
+       */
+    
+    
+
+    /* .body-main{ for small
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:55em)
+{
+    .taxt{ 
+    max-width: 40em;(for phone layout)
+    body{
+        background-color: aquamarine;
+    }
+    .div2{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+    .body-main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}*/
