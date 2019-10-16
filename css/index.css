@@ -67,23 +67,23 @@ a {color:var(--links) ;}
         margin-right: auto;
     }
 .srch-icon{
-    color: var(--darkgrey);
+    color: var(--loveclr);
 padding-left: 1em;
 }
 .srch-bar{
 border-radius: 0.2em;
-color: var(--darkgrey);
+color: var(--loveclr);
 padding-left: 1em;
 
 }
 .srch-bar input{
-border: var(--darkgrey) solid;
+border: var(--loveclr) solid;
 border-radius: 0.3em;
 padding-top: 1em;
 padding-left: 4em;
 margin-top: 1em;
 text-align: left;
-width: 25em;
+width: 15em;
 height: 3em;
 }
 .icon-n-bar{
@@ -95,6 +95,7 @@ height: 3em;
     display:grid;
     grid-template-columns: 1fr 1fr;
     padding:0 0 2rem 0;
+    text-align: right;
 }
 
 
@@ -277,7 +278,12 @@ grid-template-rows: 1fr 1fr 1fr;}
     margin-top: 1em;
     margin-left: 2.3em;
    }
-.divMainCont{padding-left: 1em;text-align: center;}
+.divMainCont{padding-left: 1em;
+    text-align: center;
+    background-color: var(--semilight);
+    margin-top: 1em;
+    padding-top: 2em;
+}
 .cntcts li{display: inline-block; text-align: left;}
 .cntcts a {padding-left: 1em; text-align: right;}
 .cntcts img{
@@ -292,17 +298,80 @@ grid-template-rows: 1fr 1fr 1fr;}
 }
 .PostHeading{font-weight: bold !important; text-align: center; padding-top: 2em;}
 .divPosts{background-color: var(--semilight);}
-.divPosts p{padding: 1em;}
+.divPosts p{padding: 1em;
+text-align: center;}
+.divPosts a{
+    display: block;
+text-align: center;
+}
+.divposts href{
+    text-align: center;
+}
 .divPosts img{
     width: 28em;
     min-height: 6em;
     border: var(--darkgrey)solid;
     border-radius: 4em;
     margin-top: 1em;
-    margin-left: 2.3em;
+    margin-left: 2.5em;
     text-align: center;
 }
+.like-etc{text-align: center;}
+ /* change .srch-icon color into loveclr at 40 */
+@media screen and (min-width: 35em){
+    body{
+        position: absolute;
+    }
+    .srch-icon{
+        color: var(--dark);
+    }
+   .logoleft{
+       display: grid;
+       grid-template-columns: auto 1fr;
+   } 
+   .topbar li{
+display: inline;
+   }
+   .add-pro li{
+    display: inline;
+   } 
+   .sub-menu{
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    text-align: right;
+    background-color: var(--light);
+    color: var(--darkgrey)
+   }
+   .crt-post-grd{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   }
+   .crt-prfl-n-inpt{
+    display: grid;
+    grid-template-columns: auto 1fr;
+   }
+   .tag-grid{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    text-align: center;
+    padding-left: 1em;
+   }
+   .lifeeventimg{
+       margin-left: 5em;
+   }
+   .ur-page-pic-imi-parent{ 
+    margin-left: 2em;
+}
+.game-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding-left: 10em;
+}
+}
 /* }
+
+
     .ins-g { grid-column-start: 1;
     grid-column-end: 3;
     grid-row-end: 2;
