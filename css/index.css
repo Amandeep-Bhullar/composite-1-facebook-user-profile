@@ -297,7 +297,7 @@ grid-template-rows: 1fr 1fr 1fr;}
 .divPosts{
     padding-bottom: 2em;
     padding-top: 1em;
-    ;}
+    }
 .divPosts p{padding: 1em;
 text-align: center;}
 .divPosts a{
@@ -413,6 +413,9 @@ display: inline;
     display: block;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.divPosts{
+    background-color: var(--semilight);
 }
 .grid-crt-post{
     display: grid;
