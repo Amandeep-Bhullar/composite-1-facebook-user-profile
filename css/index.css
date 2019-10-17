@@ -392,8 +392,9 @@ display: inline;
 }
 @media screen and (min-width: 55em)
 {
+
 .logoleft{
-    display: inline;
+display: inline;
 }
 .taxt{ margin-left: 1em;}
 .fb-logo-pic img{
@@ -441,6 +442,9 @@ grid-row-start: 1;
 grid-column-end: 7;
 grid-row-start: 1;
 grid-row-end: 2;
+position: fixed;
+bottom: 0;
+right: 0;
 }
 .urpaage{ grid-column-start: 5;
 grid-column-end: 7;
