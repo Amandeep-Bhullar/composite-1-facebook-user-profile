@@ -227,15 +227,23 @@ padding-bottom: 0.5em;
     font-weight: bold;
     text-align: center;
 }
-/* start from here */
+.tag-grid{
+    padding: 1em 0 1em 0;
+}
 .tagg li{
     list-style-type: none;
     margin: 0;
     text-align: center;
-    
+    padding: 0.1em 0 0.1em 0;
 }
 .lif-evnt{
     padding-left: 4em
+}
+.laeef-evant{
+   width: 100%;
+   border: var(--darkgrey)solid;
+   border-radius: 2em;
+   margin-top: 2em;
 }
 .lfevent li{
 text-align: left;
@@ -245,37 +253,56 @@ background-color: var(--darkgrey);
 display: grid;
 grid-template-columns: auto auto;
 text-align: center;
-margin-top: 2em;
+margin-top: 1em;
+margin-right: 1em;
+margin-left: 1em;
+border: var(--darkgrey)solid;
+border-radius: 4em;
+overflow: hidden;
 }
 .lifeeventimg{    
-    width: 25em;
+    margin: 1em;
+    text-align: center;
+}
+.lifeeventimg img{
+    width: 100%;
     min-height: 6em;
     border: var(--darkgrey)solid;
     border-radius: 4em;
-    margin-top: 1em;
-    margin-left: 2.3em; 
-    text-align: center;
+}
+.yourpage{
+    width: 100%;
+   border: var(--darkgrey)solid;
+   border-radius: 2em;
+   margin-top: 2em;
 }
 .ur-page-parent{
     background-color: var(--darkgrey);
     display: grid;
     grid-template-columns: auto auto;
     text-align: center;
-    margin-top: 2em; 
+    margin-top: 1em; 
+margin-right: 1em;
+margin-left: 1em;
+border: var(--darkgrey)solid;
+border-radius: 4em;
+overflow: hidden;
 }
 .ur-page{color: var(--light);}
-.yourpage img{
-    width: 25em;
+.ur-page-pic-imi-parent{
+    margin: 1em;
+}
+.ur-page-pic-imi-parent img{
+    width: 100%;
     min-height: 6em;
     border: var(--darkgrey)solid;
     border-radius: 4em;
-    margin-top: 1em;
-    margin-left: 2.3em;
-    text-align: center;
-}
+} 
 .ur-page-lnk{
     margin: 0;
-    padding-top: 1em;}
+   padding-top: 0.5em;
+}
+.ur-page-lnk a{color: white;}
 .games{
     padding-top: 1em;
     padding-bottom: 1em;
