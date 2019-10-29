@@ -651,7 +651,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    
+    column-gap:0.5em;
 }
 .contaacts{ 
     display: inline-block;
