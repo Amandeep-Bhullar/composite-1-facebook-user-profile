@@ -307,6 +307,7 @@ overflow: hidden;
 }
 .instaant-gm{
 padding-right: 2em;
+padding-top: 1em;
 }
 .ins-g{
     padding-left: 2em;
@@ -336,11 +337,12 @@ grid-template-rows: 1fr 1fr 1fr;}
     border: var(--darkgrey)solid;
     border-radius: 4em;
     margin-left: 2em; 
+    margin-top: 0.5em;
     text-align: center;
 }
 .friendgames img{
     width: 100%;
-    max-width: 60%;
+    max-width: 54%;
     min-height: 3em;
     text-align: center;
     margin-right: 3em;
@@ -508,17 +510,6 @@ margin: 1em;
      .lifriend{
         min-width: 8.5em;
     }
-/*     
-   .logoleft{
-       display: grid;
-       grid-template-columns: auto 1fr;
-   } 
-   .srch-icon{
-    text-align: right;} 
-   .topbar li{ 
-display: inline;
-   }*/
-
 .profile{
     text-align: center;
     padding: 1em 0;
@@ -605,38 +596,6 @@ display: inline;
 @media screen and (min-width: 55em)
 {
     /*For window screen 880*/
-/* 
-.logoleft{
-display: inline;
-}
-.taxt{ 
-margin-left: 1em;
-}
-.fb-logo-pic{
-    padding-left: 1em;
-}
-.fb-logo-pic img{
-    margin-left: 1em;
-    text-align: left;
-}
-.icon-n-bar{
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    margin-right: 1em;
-    margin-top: -5.7em;
-}
- display: grid;
-        grid-template-columns: auto 1fr;
-        margin-left: 18em;
-        margin-right: 1em;
-.topbar{
-    padding-right: -4em;
-    
-    text-align: right;
-    display: block;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-} */
 
 .icon-n-bar{
     margin-left: 25em;
@@ -659,19 +618,34 @@ margin-left: 1em;
     display: grid;
     grid-template-columns: 1fr auto;
 }
+.cntcts{
+    grid-template-columns: 1fr;
+}
+.cntcts li{
+    text-align: center;
+    margin-left: -1em;
+}
 .grnd-main-grid{
+    overflow: hidden;
     width: 100%;
     margin-top: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
+    
 }
-.contaacts{ grid-column-start: 1;
-grid-column-end: 2;
+.contaacts{ 
+    display: inline-block;
+    overflow: hidden;
+    grid-column-start: 1;
+grid-column-end: 3;
 grid-row-start: 1;
 grid-row-end: 6;
 }
-.poosts{ grid-column-start: 2;
+.poosts{ 
+    overflow: hidden;
+    width: 100%;
+grid-column-start: 3;
 grid-column-end: 8;
 grid-row-start: 1;
 grid-row-end: 6;
@@ -698,12 +672,12 @@ grid-row-start: 3;
 grid-row-end: 4;
 }
 .instaant-gm{
-
     text-align: center;
     grid-column-start: 8;
 grid-column-end: 9;
 grid-row-start: 4;
 grid-row-end: 5; 
+border-radius: 1em;
 }
 .frnds-gm{
     text-align: center;
@@ -711,59 +685,23 @@ grid-row-end: 5;
 grid-column-end: 9;
 grid-row-start: 5;
 grid-row-end: 6; 
+border-radius: 1em;
 }
 .game-grid{
     text-align: center;
     padding-right: 4em;
     margin-left: -3em;
 }
+.lif-evnt{
+    padding-left: 0em
 }
-/* 
-.grnd-main-grid{
-    width: 100%;
-    margin-top: 1em;
+.mrid{
+    padding-right: 3em; 
+}
+.lifeevent-parent{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    overflow: hidden;
 }
-.contaacts{ grid-column-start: 1;
-grid-column-end: 2;
-grid-row-start: 1;
-grid-row-end: 6;
 }
-.poosts{ grid-column-start: 2;
-grid-column-end: 5;
-grid-row-start: 1;
-grid-row-end: 6;
-}
-.advertsmnt{ grid-column-start: 5;
-grid-column-end: 7;
-grid-row-start: 1;
-grid-row-end: 2;
-/* position: fixed;
-bottom: 0;
-right: 0; 
-}
-.urpaage{ grid-column-start: 5;
-grid-column-end: 7;
-grid-row-start: 2;
-grid-row-end: 3;
-}
-.laeef-evant{
-grid-column-start: 5;
-grid-column-end: 7;
-grid-row-start: 3;
-grid-row-end: 4;
-}
-.instaant-gm{
-    grid-column-start: 5;
-grid-column-end: 7;
-grid-row-start: 4;
-grid-row-end: 5; 
-}
-.frnds-gm{
-    grid-column-start: 5;
-grid-column-end: 7;
-grid-row-start: 5;
-grid-row-end: 6; 
-} */
